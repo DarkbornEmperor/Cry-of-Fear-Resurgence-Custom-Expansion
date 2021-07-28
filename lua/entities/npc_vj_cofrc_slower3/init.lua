@@ -20,17 +20,17 @@ elseif Slower_Body == 3 then
     self:SetBodygroup(0,2)		
 end	
     self.SoundTbl_Alert = {
-	"vj_cofr/cof/custom/slower3/slower_alert10.wav",
-	"vj_cofr/cof/custom/slower3/slower_alert20.wav",
-	"vj_cofr/cof/custom/slower3/slower_alert30.wav"
+	"vj_cofr/custom/slower3/slower_alert10.wav",
+	"vj_cofr/custom/slower3/slower_alert20.wav",
+	"vj_cofr/custom/slower3/slower_alert30.wav"
 }
     self.SoundTbl_BeforeMeleeAttack = {
-	"vj_cofr/cof/custom/slower3/slower_attack1.wav",
-	"vj_cofr/cof/custom/slower3/slower_attack2.wav"
+	"vj_cofr/custom/slower3/slower_attack1.wav",
+	"vj_cofr/custom/slower3/slower_attack2.wav"
 }
     self.SoundTbl_Pain = {
-	"vj_cofr/cof/custom/slower3/slower_pain1.wav",
-	"vj_cofr/cof/custom/slower3/slower_pain2.wav"
+	"vj_cofr/custom/slower3/slower_pain1.wav",
+	"vj_cofr/custom/slower3/slower_pain2.wav"
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
