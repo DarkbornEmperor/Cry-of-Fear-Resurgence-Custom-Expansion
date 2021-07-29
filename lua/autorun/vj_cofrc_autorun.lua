@@ -30,7 +30,12 @@ if VJExists == true then
     VJ.AddNPC("Suicider 3","npc_vj_cofrc_suicider3",vCat)
     VJ.AddNPC("Sewmo","npc_vj_cofrc_sewmo",vCat)
     VJ.AddNPC("Faster","npc_vj_cofrc_faster",vCat)
-    VJ.AddNPC("Faster 2","npc_vj_cofrc_faster2",vCat)		
+    VJ.AddNPC("Faster 2","npc_vj_cofrc_faster2",vCat)
+    VJ.AddNPC("Baby","npc_vj_cofrc_baby",vCat)
+    VJ.AddNPC("Children","npc_vj_cofrc_children",vCat)
+    VJ.AddNPC("Citalopram","npc_vj_cofrc_citalopram",vCat)
+    VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)
+    VJ.AddNPC("Craig","npc_vj_cofrc_craig",vCat)	
 
 	-- Afraid of Monsters: Remod --
 	vCat = "CoF Resurgence: AoM"	
@@ -57,7 +62,12 @@ if VJExists == true then
     util.PrecacheModel("models/vj_cofr/custom/krypandenej.mdl")
     util.PrecacheModel("models/vj_cofr/custom/faceless_claw.mdl")
     util.PrecacheModel("models/vj_cofr/custom/faster.mdl")
-    util.PrecacheModel("models/vj_cofr/custom/faster2.mdl")	
+    util.PrecacheModel("models/vj_cofr/custom/faster2.mdl")
+    util.PrecacheModel("models/vj_cofr/custom/baby.mdl")
+    util.PrecacheModel("models/vj_cofr/custom/children.mdl")
+    util.PrecacheModel("models/vj_cofr/custom/sawer.mdl")
+    util.PrecacheModel("models/vj_cofr/custom/citalopram.mdl")
+    util.PrecacheModel("models/vj_cofr/custom/craig.mdl")	
 	util.PrecacheModel("models/vj_cofr/aom/zombiehd.mdl")
 	util.PrecacheModel("models/vj_cofr/aom/zombiehd2.mdl")
 	util.PrecacheModel("models/vj_cofr/aom/zombiehd3.mdl")
