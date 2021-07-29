@@ -1,4 +1,5 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/vj_cofr/aom/twitcher/hd2/znurse_body"
+                "$additive" 1 
 }
