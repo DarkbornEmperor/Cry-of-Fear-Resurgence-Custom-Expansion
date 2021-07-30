@@ -27,6 +27,9 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
+function ENT:SetUpGibesOnDeath(dmginfo,hitgroup)	
+end	
+---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:CustomDeathAnimationCode(dmginfo,hitgroup)
 	if self:IsMoving() then 
 	   self.AnimTbl_Death = {ACT_DIESIMPLE}	
