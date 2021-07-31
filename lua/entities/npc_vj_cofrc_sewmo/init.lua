@@ -31,10 +31,12 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnTakeDamage_BeforeDamage(dmginfo,hitgroup)
-	if self.Sewmo_WireBroken == false && self.Dead == false && (self.StartHealth *.50 > self:Health()) then
+function ENT:CustomOnThink_AIEnabled()
+    if self.Dead == true then return false end
+
+	if self.Sewmo_WireBroken == false && (self.StartHealth *.50 > self:Health()) then
 		self.Sewmo_WireBroken = true
-		self:VJ_ACT_PLAYACTIVITY(ACT_SIGNAL1,true,1,false)
+		self:VJ_ACT_PLAYACTIVITY(ACT_SIGNAL1,true,false,true)
 		timer.Simple(0.3,function() if IsValid(self) then
 			if self.HasSounds == true then VJ_EmitSound(self,"vj_cofr/cof/sewmo/break_free.wav") end end end)
 			timer.Simple(1,function() if IsValid(self) then
