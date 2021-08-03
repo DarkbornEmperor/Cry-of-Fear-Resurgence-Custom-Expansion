@@ -1,6 +1,6 @@
-ENT.Base 			= "npc_vj_cofraom_ghost" -- List of all base types: https://github.com/DrVrej/VJ-Base/wiki/Base-Types
+ENT.Base 			= "npc_vj_cofraom_spitter" -- List of all base types: https://github.com/DrVrej/VJ-Base/wiki/Base-Types
 ENT.Type 			= "ai"
-ENT.PrintName 		= "Launcher Ghost (HD)"
+ENT.PrintName 		= "Spitter (HD)"
 ENT.Author 			= "Darkborn"
 ENT.Contact 		= "http://steamcommunity.com/groups/vrejgaming"
 ENT.Purpose 		= "Spawn it and fight with it!"

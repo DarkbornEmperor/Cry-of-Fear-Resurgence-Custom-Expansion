@@ -39,13 +39,13 @@ if VJExists == true then
 
 	-- Afraid of Monsters: Remod --
 	vCat = "CoF Resurgence: AoM"	
-	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcherhd",vCat)
-	VJ.AddNPC("Handcrab (HD)","npc_vj_cofraom_handcrabhd",vCat)
-	VJ.AddNPC("Spitter Twitcher (HD)","npc_vj_cofraom_twitcherspithd",vCat)
-    VJ.AddNPC("One-Eyed Dog (HD)","npc_vj_cofraom_doghd",vCat)		
-	VJ.AddNPC("Abomination (HD)","npc_vj_cofraom_abominationhd",vCat)
-	VJ.AddNPC("Launcher Ghost (HD)","npc_vj_cofraom_ghosthd",vCat)
-    VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addictionhd",vCat)
+	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)
+	VJ.AddNPC("Handcrab (HD)","npc_vj_cofraom_handcrab_hd",vCat)
+	VJ.AddNPC("Spitter (HD)","npc_vj_cofraom_spitter_hd",vCat)
+    VJ.AddNPC("Hellhound (HD)","npc_vj_cofraom_hellhound_hd",vCat)		
+	VJ.AddNPC("Ghost (HD)","npc_vj_cofraom_ghost_hd",vCat)
+	VJ.AddNPC("Screamer (HD)","npc_vj_cofraom_screamer_hd",vCat)
+    VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addiction_hd",vCat)
 	
 	-- Precache Models --
     util.PrecacheModel("models/vj_cofr/custom/suicider.mdl")
