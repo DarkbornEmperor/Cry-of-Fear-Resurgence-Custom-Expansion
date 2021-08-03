@@ -1,5 +1,5 @@
-# Cry of Fear Resurgence Custom
- Adds custom content for Cry of Fear Resurgence.
+# Cry of Fear Resurgence Custom Expansion
+ Adds additional custom content for Cry of Fear Resurgence.
  
  https://github.com/DarkbornEmperor/Cry-of-Fear-Resurgence
  
