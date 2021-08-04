@@ -5,8 +5,8 @@
 	without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 --------------------------------------------------*/
 ------------------ Addon Information ------------------
-local PublicAddonName = "Cry of Fear Resurgence - Custom Content"
-local AddonName = "Cry of Fear Resurgence - Custom Content"
+local PublicAddonName = "Cry of Fear Resurgence - Custom Expansion"
+local AddonName = "Cry of Fear Resurgence - Custom Expansion"
 local AddonType = "SNPC"
 local AutorunFile = "autorun/vj_cofrc_autorun.lua"
 -------------------------------------------------------
@@ -14,8 +14,10 @@ local VJExists = file.Exists("lua/autorun/vj_base_autorun.lua","GAME")
 if VJExists == true then
 	include('autorun/vj_controls.lua')
 
-	-- Custom --
+	-- Cry of Fear: Custom --
 	vCat = "CoF Resurgence: Custom"
+	
+	-- Enemies --
     VJ.AddNPC("Slower 1","npc_vj_cofrc_slower1",vCat)
 	VJ.AddNPC("Slower 3","npc_vj_cofrc_slower3",vCat)
 	VJ.AddNPC("Slower No","npc_vj_cofrc_slowerno",vCat)
@@ -34,17 +36,23 @@ if VJExists == true then
     VJ.AddNPC("Baby","npc_vj_cofrc_baby",vCat)
     VJ.AddNPC("Children","npc_vj_cofrc_children",vCat)
     VJ.AddNPC("Citalopram","npc_vj_cofrc_citalopram",vCat)
+	
+	-- Bosses --
     VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)
     VJ.AddNPC("Craig","npc_vj_cofrc_craig",vCat)	
 
 	-- Afraid of Monsters: Remod --
-	vCat = "CoF Resurgence: AoM"	
+	vCat = "CoF Resurgence: AoM"
+	
+    -- Enemies --	
 	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)
 	VJ.AddNPC("Handcrab (HD)","npc_vj_cofraom_handcrab_hd",vCat)
 	VJ.AddNPC("Spitter (HD)","npc_vj_cofraom_spitter_hd",vCat)
     VJ.AddNPC("Hellhound (HD)","npc_vj_cofraom_hellhound_hd",vCat)		
 	VJ.AddNPC("Ghost (HD)","npc_vj_cofraom_ghost_hd",vCat)
 	VJ.AddNPC("Screamer (HD)","npc_vj_cofraom_screamer_hd",vCat)
+	
+	-- Bosses --
     VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addiction_hd",vCat)
 	
 	-- Precache Models --
