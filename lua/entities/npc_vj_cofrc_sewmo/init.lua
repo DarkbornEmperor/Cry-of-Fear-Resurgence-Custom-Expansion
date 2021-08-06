@@ -52,6 +52,7 @@ function ENT:MultipleMeleeAttacks()
 	if self:GetBodygroup(0) == 0 then
 		self.AnimTbl_MeleeAttack = {ACT_MELEE_ATTACK1}
 		self.MeleeAttackDamage = 16
+		self.MeleeAttackDamageType = DMG_SLASH
 		self.SoundTbl_MeleeAttackMiss = {
 		"vj_cofr/custom/sewmo/tunga_miss.wav"
 }
@@ -61,7 +62,8 @@ function ENT:MultipleMeleeAttacks()
 }
 	elseif self:GetBodygroup(0) == 1 then
 		self.AnimTbl_MeleeAttack = {ACT_MELEE_ATTACK2}
-		self.MeleeAttackDamage = 20 
+		self.MeleeAttackDamage = 20
+        self.MeleeAttackDamageType = DMG_CLUB		
 		self.SoundTbl_MeleeAttackMiss = {
 		"vj_cofr/custom/sewmo/claw_miss1.wav",
 		"vj_cofr/custom/sewmo/claw_miss2.wav",

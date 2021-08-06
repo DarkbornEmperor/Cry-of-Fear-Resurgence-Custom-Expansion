@@ -14,8 +14,9 @@ local VJExists = file.Exists("lua/autorun/vj_base_autorun.lua","GAME")
 if VJExists == true then
 	include('autorun/vj_controls.lua')
 
-	-- Cry of Fear: Custom --
+	-- Cry of Fear: Custom Content --
 	vCat = "CoF Resurgence: Custom"
+    VJ.AddCategoryInfo(vCat, {Icon = "vj_cofr/icons/cofrc.png"})
 	
 	-- Enemies --
     VJ.AddNPC("Slower 1","npc_vj_cofrc_slower1",vCat)

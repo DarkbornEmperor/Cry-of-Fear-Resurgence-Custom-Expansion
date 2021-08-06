@@ -37,6 +37,7 @@ end
 function ENT:MultipleMeleeAttacks()
 	if self:GetBodygroup(0) == 2 then
 		self.MeleeAttackDamage = 25
+		self.MeleeAttackDamageType = DMG_SLASH
         self.SoundTbl_MeleeAttackExtra = {
         "vj_cofr/aom/davidbad/Axe_hitbody.wav"
 }	
@@ -45,6 +46,7 @@ function ENT:MultipleMeleeAttacks()
 }
 	elseif self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 1 then
 		self.MeleeAttackDamage = 20 
+		self.MeleeAttackDamageType = DMG_CLUB
         self.SoundTbl_MeleeAttackExtra = {
         "vj_cofr/cof/slower/hammer_strike1.wav",
         "vj_cofr/cof/slower/hammer_strike2.wav",
