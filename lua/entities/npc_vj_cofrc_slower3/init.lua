@@ -32,6 +32,10 @@ end
 	"vj_cofr/custom/slower3/slower_pain1.wav",
 	"vj_cofr/custom/slower3/slower_pain2.wav"
 }
+    self.SoundTbl_Death = {
+	"vj_cofr/custom/slower3/slower_pain1.wav",
+	"vj_cofr/custom/slower3/slower_pain2.wav"
+}
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:MultipleMeleeAttacks()

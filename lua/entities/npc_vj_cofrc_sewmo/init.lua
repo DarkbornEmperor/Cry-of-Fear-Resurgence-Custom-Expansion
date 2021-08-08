@@ -29,6 +29,10 @@ end
 	"vj_cofr/custom/sewmo/sewmo_pain1.wav",
 	"vj_cofr/custom/sewmo/sewmo_pain2.wav"
 }
+    self.SoundTbl_Death = {
+	"vj_cofr/custom/sewmo/sewmo_pain1.wav",
+	"vj_cofr/custom/sewmo/sewmo_pain2.wav"
+}
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:CustomOnThink_AIEnabled()

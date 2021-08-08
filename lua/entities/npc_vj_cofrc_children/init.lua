@@ -22,6 +22,10 @@ function ENT:Children_CustomOnInitialize()
 	"vj_cofr/custom/children/child_pain1.wav",
 	"vj_cofr/custom/children/child_pain2.wav"
 }
+    self.SoundTbl_Death = {
+	"vj_cofr/custom/children/child_pain1.wav",
+	"vj_cofr/custom/children/child_pain2.wav"
+}
 end
 /*-----------------------------------------------
 	*** Copyright (c) 2012-2021 by DrVrej, All rights reserved. ***
