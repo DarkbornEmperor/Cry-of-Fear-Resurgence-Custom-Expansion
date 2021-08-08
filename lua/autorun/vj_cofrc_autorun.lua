@@ -37,6 +37,8 @@ if VJExists == true then
     VJ.AddNPC("Baby","npc_vj_cofrc_baby",vCat)
     VJ.AddNPC("Children","npc_vj_cofrc_children",vCat)
     VJ.AddNPC("Citalopram","npc_vj_cofrc_citalopram",vCat)
+    VJ.AddNPC("Monsterblacker","npc_vj_cofrc_monsterblack",vCat)
+    VJ.AddNPC("Crazyrunner","npc_vj_cofrc_crazyrunner",vCat)	
 	
 	-- Bosses --
     VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)
