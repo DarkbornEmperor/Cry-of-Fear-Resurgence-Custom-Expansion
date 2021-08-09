@@ -45,7 +45,7 @@ if VJExists == true then
     VJ.AddNPC("Craig","npc_vj_cofrc_craig",vCat)	
 
 	-- Afraid of Monsters: Remod --
-	vCat = "CoF Resurgence: AoM"
+	vCat = "CoF Resurgence: AoM:DC"
 	
     -- Enemies --	
 	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)
