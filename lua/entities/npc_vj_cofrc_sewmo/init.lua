@@ -35,10 +35,10 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnThink_AIEnabled()
-    if self.Dead == true then return false end
+function ENT:CustomOnTakeDamage_BeforeDamage(dmginfo, hitgroup)
+    if self.Dead == true or self.Sewmo_WireBroken == true then return end
 
-	if self.Sewmo_WireBroken == false && (self.StartHealth *.50 > self:Health()) then
+	if self.Sewmo_WireBroken == false && (self.StartHealth *.60 > self:Health()) && dmginfo:IsDamageType(DMG_SLASH) or dmginfo:IsDamageType(DMG_CLUB) then
 		self.Sewmo_WireBroken = true
 		self:VJ_ACT_PLAYACTIVITY(ACT_SIGNAL1,true,false,false)
 		timer.Simple(0.3,function() if IsValid(self) then
