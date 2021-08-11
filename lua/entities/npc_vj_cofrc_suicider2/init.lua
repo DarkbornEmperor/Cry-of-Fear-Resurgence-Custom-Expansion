@@ -34,7 +34,7 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:SetUpGibesOnDeath(dmginfo,hitgroup)
+function ENT:CustomOnPriorToKilled(dmginfo,hitgroup)
 	if self.Suicider_DeathSuicide == false && hitgroup == HITGROUP_HEAD && dmginfo:GetDamageForce():Length() > 800 then
     if self.Suicider_Skin == 0 then self:SetBodygroup(0,1) end
 	if self.Suicider_Skin == 1 then self:SetBodygroup(0,3) end
