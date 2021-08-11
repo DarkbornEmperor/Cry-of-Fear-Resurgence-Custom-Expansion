@@ -17,22 +17,28 @@ elseif Slower_Body == 2 then
     self:SetBodygroup(0,1)		
 end	
     self.SoundTbl_Alert = {
-	"vj_cofr/cof/slower/slower_alert10.wav",
-	"vj_cofr/cof/slower/slower_alert20.wav",
-	"vj_cofr/cof/slower/slower_alert30.wav"
+	"vj_cofr/custom/slower3/slower_alert10.wav",
+	"vj_cofr/custom/slower3/slower_alert20.wav",
+	"vj_cofr/custom/slower3/slower_alert30.wav"
 }
     self.SoundTbl_BeforeMeleeAttack = {
-	"vj_cofr/cof/slower/slower_attack1.wav",
-	"vj_cofr/cof/slower/slower_attack2.wav"
+	"vj_cofr/custom/slower3/slower_attack1.wav",
+	"vj_cofr/custom/slower3/slower_attack2.wav"
 }
     self.SoundTbl_Pain = {
-	"vj_cofr/cof/slower/slower_pain1.wav",
-	"vj_cofr/cof/slower/slower_pain2.wav"
+	"vj_cofr/custom/slower3/slower_pain1.wav",
+	"vj_cofr/custom/slower3/slower_pain2.wav"
 }
     self.SoundTbl_Death = {
-	"vj_cofr/cof/slower/slower_pain1.wav",
-	"vj_cofr/cof/slower/slower_pain2.wav"
+	"vj_cofr/custom/slower3/slower_pain1.wav",
+	"vj_cofr/custom/slower3/slower_pain2.wav"
 }
+end
+-----------------------------------------------------------------------------------------------------------------------------------------------
+function ENT:CustomOnAlert()
+    if math.random(1,3) == 1 then
+        self:PlaySoundSystem("Alert", {"vj_cofr/cof/slowerno/headdy.wav"}) 	
+    end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:MultipleMeleeAttacks()
