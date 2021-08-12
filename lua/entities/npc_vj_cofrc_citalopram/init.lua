@@ -6,6 +6,8 @@ include('shared.lua')
 	without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = {"models/vj_cofr/custom/citalopram.mdl"} 
+-- Custom
+ENT.CrazyRunner_Type = 1
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:CrazyRunner_CustomOnInitialize()
     self.SoundTbl_Alert = {
@@ -16,6 +18,9 @@ function ENT:CrazyRunner_CustomOnInitialize()
 end
 -----------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:CustomOnAlert()
+    if math.random(1,3) == 1 then
+        self:PlaySoundSystem("Alert", {"vj_cofr/cof/citalopram/citalopramscream.wav"}) 	
+    end
 end
 /*-----------------------------------------------
 	*** Copyright (c) 2012-2021 by DrVrej, All rights reserved. ***

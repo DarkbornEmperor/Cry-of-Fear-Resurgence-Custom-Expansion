@@ -8,8 +8,6 @@ include('shared.lua')
 ENT.Model = {"models/vj_cofr/custom/faster2.mdl"} 
 -- Custom
 ENT.Faster_Type = 1
- 	-- 0 = Female
-	-- 1 = Male
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Faster_CustomOnInitialize()
     self.SoundTbl_Alert = {
@@ -20,8 +18,7 @@ function ENT:Faster_CustomOnInitialize()
 	"vj_cofr/custom/faster/faster_pain.wav"
 }
     self.SoundTbl_Pain = {
-	"vj_cofr/custom/slower/slower_pain1.wav",
-	"vj_cofr/custom/slower/slower_pain2.wav"
+	"vj_cofr/custom/faster/faster_pain.wav"
 }
     self.SoundTbl_Death = {
 	"vj_cofr/custom/faster/faster_death.wav"
