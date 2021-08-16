@@ -67,6 +67,9 @@ function ENT:CustomDeathAnimationCode(dmginfo,hitgroup)
 	else
        self.AnimTbl_Death = {ACT_DIE_HEADSHOT}		
 end
+    if self.Suicider_DeathSuicide == false then
+       self:DropGlock()
+end	
 	if self.Suicider_DeathSuicide == true then
 		self.AnimTbl_Death = {ACT_DIE_GUTSHOT}
 		timer.Simple(0.5,function()
@@ -74,6 +77,7 @@ end
             if self.Suicider_Skin == 0 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,1) end
 	        if self.Suicider_Skin == 1 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,3) end
 			if self.Suicider_Skin == 2 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,5) end
+			   self:DropGlock()
 				if self.HasGibDeathParticles == true then
 					local bloodeffect = EffectData()
 					bloodeffect:SetOrigin(self:GetAttachment(self:LookupAttachment("head")).Pos)

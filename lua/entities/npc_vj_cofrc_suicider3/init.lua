@@ -40,10 +40,14 @@ function ENT:CustomDeathAnimationCode(dmginfo,hitgroup)
 	else
        self.AnimTbl_Death = {ACT_DIE_HEADSHOT}		
 end
+    if self.Suicider_DeathSuicide == false then
+       self:DropGlock()
+end	
 	if self.Suicider_DeathSuicide == true then
 		self.AnimTbl_Death = {ACT_DIE_GUTSHOT}
 		timer.Simple(0.5,function()
 			if IsValid(self) then
+		      self:DropGlock()
 			end
 		end)
 	end
