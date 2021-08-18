@@ -19,41 +19,42 @@ if VJExists == true then
     VJ.AddCategoryInfo(vCat, {Icon = "vj_cofr/icons/cofrc.png"})
 	
 	-- Enemies --
+    VJ.AddNPC("Baby","npc_vj_cofrc_baby",vCat)	
+    VJ.AddNPC("Children","npc_vj_cofrc_children",vCat)
+    VJ.AddNPC("Citalopram","npc_vj_cofrc_citalopram",vCat)		
+    VJ.AddNPC("Crawler","npc_vj_cofrc_crawler",vCat)
+	VJ.AddNPC("Crawler 2","npc_vj_cofrc_crawler2",vCat)
+    VJ.AddNPC("Crazyrunner","npc_vj_cofrc_crazyrunner",vCat)	
+    VJ.AddNPC("Croucher","npc_vj_cofrc_croucher",vCat)	
+    VJ.AddNPC("Faceless (Claw)","npc_vj_cofrc_faceless_claw",vCat)	
+    VJ.AddNPC("Faster","npc_vj_cofrc_faster",vCat)
+    VJ.AddNPC("Faster 2","npc_vj_cofrc_faster2",vCat)	
+	VJ.AddNPC("Krypandenej","npc_vj_cofrc_krypandenej",vCat)
+    VJ.AddNPC("Monsterblacker","npc_vj_cofrc_monsterblack",vCat)
+    VJ.AddNPC("Sewmo","npc_vj_cofrc_sewmo",vCat)	
     VJ.AddNPC("Slower 1","npc_vj_cofrc_slower1",vCat)
 	VJ.AddNPC("Slower 3","npc_vj_cofrc_slower3",vCat)
 	VJ.AddNPC("Slower No","npc_vj_cofrc_slowerno",vCat)
-	VJ.AddNPC("Slower 10","npc_vj_cofrc_slower10",vCat)
-    VJ.AddNPC("Croucher","npc_vj_cofrc_croucher",vCat)	
-    VJ.AddNPC("Crawler","npc_vj_cofrc_crawler",vCat)
-	VJ.AddNPC("Crawler 2","npc_vj_cofrc_crawler2",vCat)
-	VJ.AddNPC("Krypandenej","npc_vj_cofrc_krypandenej",vCat)
-    VJ.AddNPC("Faceless (Claw)","npc_vj_cofrc_facelessclaw",vCat)	
+	VJ.AddNPC("Slower 10","npc_vj_cofrc_slower10",vCat)	
     VJ.AddNPC("Suicider","npc_vj_cofrc_suicider",vCat)
     VJ.AddNPC("Suicider 2","npc_vj_cofrc_suicider2",vCat)	
     VJ.AddNPC("Suicider 3","npc_vj_cofrc_suicider3",vCat)
-    VJ.AddNPC("Sewmo","npc_vj_cofrc_sewmo",vCat)
-    VJ.AddNPC("Faster","npc_vj_cofrc_faster",vCat)
-    VJ.AddNPC("Faster 2","npc_vj_cofrc_faster2",vCat)
-    VJ.AddNPC("Baby","npc_vj_cofrc_baby",vCat)
-    VJ.AddNPC("Children","npc_vj_cofrc_children",vCat)
-    VJ.AddNPC("Citalopram","npc_vj_cofrc_citalopram",vCat)
-    VJ.AddNPC("Monsterblacker","npc_vj_cofrc_monsterblack",vCat)
-    VJ.AddNPC("Crazyrunner","npc_vj_cofrc_crazyrunner",vCat)	
 	
 	-- Bosses --
-    VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)
-    VJ.AddNPC("Craig","npc_vj_cofrc_craig",vCat)	
+    VJ.AddNPC("Craig","npc_vj_cofrc_craig",vCat)
+    VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)	
 
-	-- Afraid of Monsters: Remod --
-	vCat = "CoF Resurgence: AoM:DC"
+	-- Afraid of Monsters: Director's Cut Remod --
+	vCat = "CoF Resurgence: AoM:DC Remod"
+	VJ.AddCategoryInfo(vCat, {Icon = "vj_cofr/icons/cofraom.png"})
 	
-    -- Enemies --	
-	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)
+    -- Enemies --
+	VJ.AddNPC("Ghost (HD)","npc_vj_cofraom_ghost_hd",vCat)	
 	VJ.AddNPC("Handcrab (HD)","npc_vj_cofraom_handcrab_hd",vCat)
-	VJ.AddNPC("Spitter (HD)","npc_vj_cofraom_spitter_hd",vCat)
     VJ.AddNPC("Hellhound (HD)","npc_vj_cofraom_hellhound_hd",vCat)		
-	VJ.AddNPC("Ghost (HD)","npc_vj_cofraom_ghost_hd",vCat)
 	VJ.AddNPC("Screamer (HD)","npc_vj_cofraom_screamer_hd",vCat)
+	VJ.AddNPC("Spitter (HD)","npc_vj_cofraom_spitter_hd",vCat)	
+	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)	
 	
 	-- Bosses --
     VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addiction_hd",vCat)
