@@ -45,8 +45,7 @@ if VJExists == true then
     VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",vCat)	
 
 	-- Afraid of Monsters: Director's Cut Remod --
-	vCat = "CoF Resurgence: AoM:DC Remod"
-	VJ.AddCategoryInfo(vCat, {Icon = "vj_cofr/icons/cofraom.png"})
+	vCat = "CoF Resurgence: AoM:DC"
 	
     -- Enemies --
 	VJ.AddNPC("Ghost (HD)","npc_vj_cofraom_ghost_hd",vCat)	
