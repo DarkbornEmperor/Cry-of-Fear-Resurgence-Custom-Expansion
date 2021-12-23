@@ -3,4 +3,5 @@
 	"$basetexture" "models/vj_cofr/aom/ghost/hd/hair"
 	//"$alphatest" 1
 	"$translucent" 1
+                "$nodecal" 1
 }
