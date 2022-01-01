@@ -3,4 +3,5 @@
 	"$basetexture" "models/vj_cofr/aom/twitcher/hd2/nzombie_head3"
                 "$selfillum" 1 
                 "$additive" 1 
+                "$nodecal" 1
 }
