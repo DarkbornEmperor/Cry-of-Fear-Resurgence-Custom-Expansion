@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models/vj_cofr/aom/ghost/hd/headlol"
+	"$basetexture" "models/vj_cofr/aom/screamer/hd/headlol"
                 "$selfillum" 1 
                 "$additive" 1 
                 "$nodecal" 1
