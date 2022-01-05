@@ -58,6 +58,9 @@ if VJExists == true then
 	-- Bosses --
     VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addiction_hd",vCat)
 	
+	-- Friendlies --
+	VJ.AddNPC("David Leatherhoff (HD)","npc_vj_cofraom_david_hd",vCat)
+	
 	-- Precache Models --
     util.PrecacheModel("models/vj_cofr/custom/suicider.mdl")
     util.PrecacheModel("models/vj_cofr/custom/suicider2.mdl")	
@@ -88,6 +91,7 @@ if VJExists == true then
     util.PrecacheModel("models/vj_cofr/aom/ghosthd.mdl")
     util.PrecacheModel("models/vj_cofr/aom/black_doghd.mdl")
     util.PrecacheModel("models/vj_cofr/aom/bullsquidhd.mdl")
+	util.PrecacheModel("models/vj_cofr/aom/david_hd.mdl")
 	
 -- !!!!!! DON'T TOUCH ANYTHING BELOW THIS !!!!!! -------------------------------------------------------------------------------------------------------------------------
 	AddCSLuaFile(AutorunFile)
