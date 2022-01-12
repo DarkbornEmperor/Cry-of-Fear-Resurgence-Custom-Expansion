@@ -36,14 +36,14 @@ end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:CustomOnTakeDamage_BeforeDamage(dmginfo, hitgroup)
-    if self.Dead == true or self.Sewmo_WireBroken == true then return end
+    if self.Dead == true or self.Sewmo_WireBroken == true or self.DeathAnimationCodeRan then return end
 
-	if self.Sewmo_WireBroken == false && (self.StartHealth *.60 > self:Health()) && dmginfo:IsDamageType(DMG_SLASH) or dmginfo:IsDamageType(DMG_CLUB) then
+	if self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 2 && self.Sewmo_WireBroken == false && (self.StartHealth *.60 > self:Health()) && math.random(1,5) == 1 && !self.DeathAnimationCodeRan then
 		self.Sewmo_WireBroken = true
 		self:VJ_ACT_PLAYACTIVITY(ACT_SIGNAL1,true,false,false)
-		timer.Simple(0.3,function() if IsValid(self) then
+		timer.Simple(0.3,function() if IsValid(self) && !self.DeathAnimationCodeRan then
 			if self.HasSounds == true then VJ_EmitSound(self,"vj_cofr/cof/sewmo/break_free.wav", 75, 100) end end end)
-			timer.Simple(1,function() if IsValid(self) then
+			timer.Simple(1,function() if IsValid(self) && !self.DeathAnimationCodeRan then
 			if self.Sewmo_Skin == 0 && self.Sewmo_WireBroken == true then self:SetBodygroup(0,1) end
 	        if self.Sewmo_Skin == 1 && self.Sewmo_WireBroken == true then self:SetBodygroup(0,3) end
 				self:DoChaseAnimation()
