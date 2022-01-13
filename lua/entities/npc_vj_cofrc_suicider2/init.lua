@@ -33,69 +33,6 @@ end
 	"vj_cofr/cof/slower/slower_pain2.wav"
 }
 end
----------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnPriorToKilled(dmginfo,hitgroup)
-	if self.Suicider_DeathSuicide == false && hitgroup == HITGROUP_HEAD && dmginfo:GetDamageForce():Length() > 800 then
-    if self.Suicider_Skin == 0 then self:SetBodygroup(0,1) end
-	if self.Suicider_Skin == 1 then self:SetBodygroup(0,3) end
-	if self.Suicider_Skin == 2 then self:SetBodygroup(0,5) end
-	
-	if self.HasGibDeathParticles == true then
-		local bloodeffect = EffectData()
-		bloodeffect:SetOrigin(self:GetAttachment(self:LookupAttachment("head")).Pos)
-		bloodeffect:SetColor(VJ_Color2Byte(Color(130,19,10)))
-		bloodeffect:SetScale(30)
-		util.Effect("VJ_Blood1",bloodeffect)
-		
-		local bloodspray = EffectData()
-		bloodspray:SetOrigin(self:GetAttachment(self:LookupAttachment("head")).Pos)
-		bloodspray:SetScale(4)
-		bloodspray:SetFlags(3)
-		bloodspray:SetColor(0)
-		util.Effect("bloodspray",bloodspray)
-		util.Effect("bloodspray",bloodspray)
-end
-		VJ_EmitSound(self,"vj_cofr/fx/bodysplat.wav", 75, 100)	
-		ParticleEffect("vj_hl_blood_red_large",self:GetAttachment(self:LookupAttachment("head")).Pos,self:GetAngles())					
-		return true,{DeathAnim=true}
-	end	
-end	
----------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomDeathAnimationCode(dmginfo,hitgroup)
-	if self:IsMoving() then 
-	   self.AnimTbl_Death = {ACT_DIESIMPLE}	
-	else
-       self.AnimTbl_Death = {ACT_DIE_HEADSHOT}		
-end
-    if self.Suicider_DeathSuicide == false then
-       self:DropGlock()
-end	
-	if self.Suicider_DeathSuicide == true then
-		self.AnimTbl_Death = {ACT_DIE_GUTSHOT}
-		timer.Simple(0.5,function()
-			if IsValid(self) then
-            if self.Suicider_Skin == 0 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,1) end
-	        if self.Suicider_Skin == 1 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,3) end
-			if self.Suicider_Skin == 2 && self.Suicider_DeathSuicide == true then self:SetBodygroup(0,5) end
-			   self:DropGlock()
-				if self.HasGibDeathParticles == true then
-					local bloodeffect = EffectData()
-					bloodeffect:SetOrigin(self:GetAttachment(self:LookupAttachment("head")).Pos)
-					bloodeffect:SetColor(VJ_Color2Byte(Color(130,19,10)))
-					bloodeffect:SetScale(50)
-					util.Effect("VJ_Blood1",bloodeffect)
-				    local bloodspray = EffectData()
-		            bloodspray:SetOrigin(self:GetAttachment(self:LookupAttachment("head")).Pos)
-		            bloodspray:SetScale(4)
-		            bloodspray:SetFlags(3)
-		            bloodspray:SetColor(0)
-		            util.Effect("bloodspray",bloodspray)
-		            util.Effect("bloodspray",bloodspray)
-				end
-			end
-		end)
-	end
-end
 /*-----------------------------------------------
 	*** Copyright (c) 2012-2022 by DrVrej, All rights reserved. ***
 	No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
