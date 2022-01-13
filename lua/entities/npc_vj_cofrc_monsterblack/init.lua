@@ -17,8 +17,6 @@ ENT.SoundTbl_MeleeAttackMiss = {
 "vj_cofr/cof/faceless/fist_miss1.wav",
 "vj_cofr/cof/faceless/fist_miss2.wav"
 }
--- Custom
-ENT.Slower_Type = 3
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_CustomOnInitialize()
 local Slower_Body = math.random(1,3)
