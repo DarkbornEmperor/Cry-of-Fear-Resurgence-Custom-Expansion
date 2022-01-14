@@ -53,7 +53,10 @@ if VJExists == true then
     VJ.AddNPC("Hellhound (HD)","npc_vj_cofraom_hellhound_hd",vCat)		
 	VJ.AddNPC("Screamer (HD)","npc_vj_cofraom_screamer_hd",vCat)
 	VJ.AddNPC("Spitter (HD)","npc_vj_cofraom_spitter_hd",vCat)	
-	VJ.AddNPC("Twitcher (HD)","npc_vj_cofraom_twitcher_hd",vCat)	
+	VJ.AddNPC("Twitcher 1 (HD)","npc_vj_cofraom_twitcher1_hd",vCat)	
+	VJ.AddNPC("Twitcher 2 (HD)","npc_vj_cofraom_twitcher2_hd",vCat)
+	VJ.AddNPC("Twitcher 3 (HD)","npc_vj_cofraom_twitcher3_hd",vCat)
+	VJ.AddNPC("Twitcher 4 (HD)","npc_vj_cofraom_twitcher4_hd",vCat)
 	
 	-- Bosses --
     VJ.AddNPC("The Addiction (HD)","npc_vj_cofraom_addiction_hd",vCat)
