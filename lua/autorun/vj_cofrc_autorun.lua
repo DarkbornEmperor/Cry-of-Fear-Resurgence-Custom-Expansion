@@ -66,6 +66,7 @@ if VJExists == true then
 	
 	-- Friendlies --
 	VJ.AddNPC("David Leatherhoff (HD)","npc_vj_cofraom_david_hd",vCat)
+	VJ.AddNPC("David Leatherhoff (Dead) (HD)","npc_vj_cofraom_david_dead_hd",vCat)
 	
 	-- Precache Models --
     util.PrecacheModel("models/vj_cofr/custom/suicider.mdl")
