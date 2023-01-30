@@ -2,4 +2,5 @@
 {
 	"$basetexture" "models/vj_cofr/custom/sewmo/barbedwire"
 	"$alphatest" 1
+                "$nodecal" 1
 }
