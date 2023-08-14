@@ -1,4 +1,5 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models/vj_cofr/custom/slower3/yxa"
+	"$basetexture" "models/vj_cofr/aom/weapons/axe/skin"
+	"$nodecal" 1
 }

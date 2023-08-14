@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/vj_cofr/custom/sawcrazy/chainsawtex1"
+                "$nodecal" 1
+}

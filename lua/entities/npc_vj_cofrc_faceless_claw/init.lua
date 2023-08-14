@@ -20,6 +20,7 @@ ENT.SoundTbl_MeleeAttackMiss = {
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Faceless_CustomOnInitialize()
+    self:SetBodygroup(0,math.random(0,1))
     self.SoundTbl_Alert = {
 	"vj_cofr/custom/faceless/faceless_alert10.wav",
 	"vj_cofr/custom/faceless/faceless_alert20.wav",

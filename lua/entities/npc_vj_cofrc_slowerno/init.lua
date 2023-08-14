@@ -8,11 +8,11 @@ include('shared.lua')
 ENT.Model = {"models/vj_cofr/custom/slowerno.mdl"}
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_CustomOnInitialize()
-local Slower_Body = math.random(1,2)
-if Slower_Body == 1 then
+ local Slower_Body = math.random(1,2)
+ if Slower_Body == 1 then
     self.Slower_Skin = 0
     self:SetBodygroup(0,0)
-elseif Slower_Body == 2 then
+ elseif Slower_Body == 2 then
     self.Slower_Skin = 1
     self:SetBodygroup(0,1)		
 end	
@@ -41,7 +41,7 @@ function ENT:CustomOnAlert()
     end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:MultipleMeleeAttacks()
+function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
 	if self:GetBodygroup(0) == 1 then
 		self.MeleeAttackDamage = 25
 		self.MeleeAttackDamageType = DMG_SLASH
@@ -55,13 +55,13 @@ function ENT:MultipleMeleeAttacks()
 		self.MeleeAttackDamage = 20 
 		self.MeleeAttackDamageType = DMG_CLUB
         self.SoundTbl_MeleeAttackExtra = {
-        "vj_cofr/cof/slower/hammer_strike1.wav",
-        "vj_cofr/cof/slower/hammer_strike2.wav",
-        "vj_cofr/cof/slower/hammer_strike3.wav"
+        "vj_cofr/custom/slower/hammer_strike1.wav",
+        "vj_cofr/custom/slower/hammer_strike2.wav",
+        "vj_cofr/custom/slower/hammer_strike3.wav"
 }	
         self.SoundTbl_MeleeAttackMiss = {
-        "vj_cofr/cof/slower/hammer_miss1.wav",
-        "vj_cofr/cof/slower/hammer_miss2.wav"
+        "vj_cofr/custom/slower/hammer_miss1.wav",
+        "vj_cofr/custom/slower/hammer_miss2.wav"
 }	
 	end
 end
