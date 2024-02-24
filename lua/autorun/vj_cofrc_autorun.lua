@@ -1,21 +1,13 @@
-/*--------------------------------------------------
-	=============== Autorun File ===============
-	*** Copyright (c) 2012-2023 by DrVrej, All rights reserved. ***
-	No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
-	without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
---------------------------------------------------*/
 ------------------ Addon Information ------------------
-local PublicAddonName = "Cry of Fear Resurgence - Custom Expansion"
 local AddonName = "Cry of Fear Resurgence - Custom Expansion"
-local AddonType = "SNPC"
-local AutorunFile = "autorun/vj_cofrc_autorun.lua"
+local AddonType = "NPC"
 -------------------------------------------------------
 local VJExists = file.Exists("lua/autorun/vj_base_autorun.lua","GAME")
 if VJExists == true then
 	include('autorun/vj_controls.lua')
 
 	-- Cry of Fear: Custom Content --
-	spawnCategory = "CoF Resurgence: Custom"
+	local spawnCategory = "CoF Resurgence: Custom"
     VJ.AddCategoryInfo(spawnCategory, {Icon = "vj_cofr/icons/cofrc.png"})
 	
 	-- Enemies --
@@ -53,13 +45,14 @@ if VJExists == true then
     VJ.AddNPC("Upper","npc_vj_cofrc_upper",spawnCategory)
 	
 	-- Bosses --
+    VJ.AddNPC("Carcass","npc_vj_cofrc_carcass",spawnCategory)
     VJ.AddNPC("Craig","npc_vj_cofrc_craig",spawnCategory)
     VJ.AddNPC("Sawcrazy","npc_vj_cofrc_sawcrazy",spawnCategory)	
     VJ.AddNPC("Sawer","npc_vj_cofrc_sawer",spawnCategory)
     VJ.AddNPC("Sawrunner","npc_vj_cofrc_sawrunner",spawnCategory)		
 
 	-- Afraid of Monsters: Director's Cut Remod --
-	spawnCategory = "CoF Resurgence: AoM"
+	local spawnCategory = "CoF Resurgence: AoM"
 	
     -- Enemies --
 	VJ.AddNPC("Ghost (Remod)","npc_vj_cofraom_ghost_hd",spawnCategory)	
@@ -80,6 +73,7 @@ if VJExists == true then
 	VJ.AddNPC("David Leatherhoff (Dead) (Remod)","npc_vj_cofraom_david_dead_hd",spawnCategory)
 	
 	-- Precache Models --
+    util.PrecacheModel("models/vj_cofr/custom/carcass.mdl")
     util.PrecacheModel("models/vj_cofr/custom/suicider.mdl")
     util.PrecacheModel("models/vj_cofr/custom/suicider2.mdl")	
     util.PrecacheModel("models/vj_cofr/custom/suicider3.mdl")
@@ -126,12 +120,12 @@ if VJExists == true then
 	util.PrecacheModel("models/vj_cofr/aom/david_hd.mdl")
 	
 -- !!!!!! DON'T TOUCH ANYTHING BELOW THIS !!!!!! -------------------------------------------------------------------------------------------------------------------------
-	AddCSLuaFile(AutorunFile)
-	VJ.AddAddonProperty(AddonName,AddonType)
+	AddCSLuaFile()
+	VJ.AddAddonProperty(AddonName, AddonType)
 else
 	if CLIENT then
-		chat.AddText(Color(0, 200, 200), PublicAddonName,
-		Color(0, 255, 0), " was unable to install, you are missing ",
+		chat.AddText(Color(0, 200, 200), AddonName, 
+		Color(0, 255, 0), " was unable to install, you are missing ", 
 		Color(255, 100, 0), "VJ Base!")
 	end
 	
@@ -155,7 +149,7 @@ else
 				local labelTitle = vgui.Create("DLabel", frame)
 				labelTitle:SetPos(250, 30)
 				labelTitle:SetText("VJ BASE IS MISSING!")
-				labelTitle:SetTextColor(Color(255,128,128))
+				labelTitle:SetTextColor(Color(255, 128, 128))
 				labelTitle:SizeToContents()
 				
 				local label1 = vgui.Create("DLabel", frame)
