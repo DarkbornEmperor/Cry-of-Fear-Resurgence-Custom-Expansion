@@ -9,7 +9,6 @@ include("shared.lua")
 ENT.Model = {"models/vj_cofr/custom/faceless_claw.mdl"}
 ENT.MeleeAttackDamageType = DMG_SLASH
     -- ====== Sound File Paths ====== --
--- Leave blank if you don't want any sounds to play
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/custom/faceless/fist_strike1.wav",
 "vj_cofr/custom/faceless/fist_strike2.wav",

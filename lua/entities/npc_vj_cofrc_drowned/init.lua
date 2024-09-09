@@ -8,7 +8,6 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = {"models/vj_cofr/custom/drowned.mdl"}
     -- ====== Sound File Paths ====== --
--- Leave blank if you don't want any sounds to play
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/custom/crazylady/knife_hitbody1.wav",
 "vj_cofr/custom/crazylady/knife_hitbody2.wav"

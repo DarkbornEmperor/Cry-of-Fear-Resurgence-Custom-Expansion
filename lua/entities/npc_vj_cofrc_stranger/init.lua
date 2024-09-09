@@ -8,7 +8,6 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = {"models/vj_cofr/custom/stranger.mdl"}
     -- ====== Sound File Paths ====== --
--- Leave blank if you don't want any sounds to play
 ENT.SoundTbl_Stranger_HeartBeat = {
 "vj_cofr/custom/stranger/st_hearbeat.wav"
 }

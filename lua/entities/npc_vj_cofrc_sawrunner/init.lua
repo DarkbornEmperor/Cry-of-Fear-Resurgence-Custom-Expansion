@@ -8,7 +8,6 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = {"models/vj_cofr/custom/sawrunner.mdl"}
     -- ====== Sound File Paths ====== --
--- Leave blank if you don't want any sounds to play
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/cof/sawrunner/chainsaw_attack_hit.wav"
 }
