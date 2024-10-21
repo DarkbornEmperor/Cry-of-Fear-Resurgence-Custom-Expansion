@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/slowerno.mdl"}
+ENT.Model = "models/vj_cofr/custom/slowerno.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Slower_CustomOnInitialize()
+function ENT:Slower_Init()
  local Slower_Body = math.random(1,2)
  if Slower_Body == 1 then
     self.Slower_Skin = 0
@@ -36,13 +36,13 @@ end
 }
 end
 -----------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAlert()
+function ENT:OnAlert(ent)
     if math.random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", {"vj_cofr/cof/slowerno/headdy.wav"})
+        self:PlaySoundSystem("Alert", "vj_cofr/cof/slowerno/headdy.wav")
     end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
+function ENT:MultipleMeleeAttacks()
     if self:GetBodygroup(0) == 1 then
         self.MeleeAttackDamage = 25
         self.MeleeAttackDamageType = DMG_SLASH

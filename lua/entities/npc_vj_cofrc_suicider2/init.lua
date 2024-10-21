@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/suicider2.mdl"}
+ENT.Model = "models/vj_cofr/custom/suicider2.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Suicider_CustomOnInitialize()
+function ENT:Suicider_Init()
 local Suicider_Body = math.random(1,3)
 if Suicider_Body == 1 then
     self.Suicider_Skin = 0

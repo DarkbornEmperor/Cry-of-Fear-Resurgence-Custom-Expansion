@@ -8,7 +8,7 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = {"models/vj_cofr/custom/slower1.mdl"}
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Slower_CustomOnInitialize()
+function ENT:Slower_Init()
  local Slower_Body = math.random(1,6)
  if Slower_Body == 1 then
     self.Slower_Skin = 0
@@ -48,7 +48,7 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
+function ENT:MultipleMeleeAttacks()
     if self:GetBodygroup(0) == 0 then
         self.MeleeAttackDamage = 25
         self.MeleeAttackDamageType = DMG_SLASH

@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/hh/crawler_hh.mdl"}
+ENT.Model = "models/vj_cofr/custom/hh/crawler_hh.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Slower_CustomOnInitialize()
+function ENT:Slower_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/cof/slower/slower_alert10.wav",
     "vj_cofr/cof/slower/slower_alert20.wav",
@@ -29,9 +29,9 @@ function ENT:Slower_CustomOnInitialize()
     self:SetCollisionBounds(Vector(13, 13, 35), Vector(-13, -13, 0))
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAlert()
+function ENT:OnAlert(ent)
     if math.random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", {"vj_cofr/cof/krypandenej/scream.wav"})
+        self:PlaySoundSystem("Alert", "vj_cofr/cof/krypandenej/scream.wav")
     end
 end
 /*-----------------------------------------------

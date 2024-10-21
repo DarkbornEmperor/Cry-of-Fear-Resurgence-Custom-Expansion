@@ -6,14 +6,14 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/baby.mdl"}
+ENT.Model = "models/vj_cofr/custom/baby.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/cof/baby/b_attack1.wav",
 "vj_cofr/cof/baby/b_attack2.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Baby_CustomOnInitialize()
+function ENT:Baby_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/cof/baby/b_alert1.wav",
     "vj_cofr/cof/baby/b_alert2.wav",

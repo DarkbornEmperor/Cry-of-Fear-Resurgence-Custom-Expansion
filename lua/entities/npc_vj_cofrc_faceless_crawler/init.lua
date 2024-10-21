@@ -6,9 +6,8 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/faceless2.mdl"}
+ENT.Model = "models/vj_cofr/custom/faceless2.mdl"
 ENT.CanFlinch = 0
-ENT.HasHitGroupFlinching = false
     -- ====== Controller Data ====== --
 ENT.VJC_Data = {
     CameraMode = 1, -- Sets the default camera mode | 1 = Third Person, 2 = First Person
@@ -17,7 +16,7 @@ ENT.VJC_Data = {
     FirstP_Offset = Vector(0, 0, 5), -- The offset for the controller when the camera is in first person
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Faceless_CustomOnInitialize()
+function ENT:Faceless_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/custom/faceless/faceless_alert10.wav",
     "vj_cofr/custom/faceless/faceless_alert20.wav",

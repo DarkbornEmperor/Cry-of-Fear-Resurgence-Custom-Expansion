@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/sawcrazy.mdl"}
+ENT.Model = "models/vj_cofr/custom/sawcrazy.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Sawcrazy_CustomOnInitialize()
+function ENT:Sawcrazy_Init()
     self:SetBodygroup(0,math.random(0,1))
     self.SoundTbl_Breath = {
     "vj_cofr/cof/sawcrazy/dblsawloop.wav"

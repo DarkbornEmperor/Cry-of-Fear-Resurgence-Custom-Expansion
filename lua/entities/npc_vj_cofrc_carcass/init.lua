@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/carcass.mdl"}
+ENT.Model = "models/vj_cofr/custom/carcass.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Carcass_CustomOnInitialize()
+function ENT:Carcass_Init()
     self.SoundTbl_Breath = {
     "vj_cofr/cof/roofboss/rb_mouthidle1.wav",
     "vj_cofr/cof/roofboss/rb_mouthidle2.wav"

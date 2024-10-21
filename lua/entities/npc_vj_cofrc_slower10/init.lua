@@ -6,10 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/slower10.mdl"}
-ENT.AnimTbl_MeleeAttack = {"vjseq_attack1","vjseq_attack2","vjseq_attack3","vjseq_attack5"}
+ENT.Model = "models/vj_cofr/custom/slower10.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Slower_CustomOnInitialize()
+function ENT:Slower_Init()
  local Slower_Body = math.random(1,3)
  if Slower_Body == 1 then
     self.Slower_Skin = 0
@@ -40,9 +39,9 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAlert()
+function ENT:OnAlert(ent)
     if math.random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", {"vj_cofr/custom/slower/scream1.wav"})
+        self:PlaySoundSystem("Alert", "vj_cofr/custom/slower/scream1.wav")
     end
 end
 /*-----------------------------------------------

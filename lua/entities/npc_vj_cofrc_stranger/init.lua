@@ -6,13 +6,13 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/stranger.mdl"}
+ENT.Model = "models/vj_cofr/custom/stranger.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_Stranger_HeartBeat = {
 "vj_cofr/custom/stranger/st_hearbeat.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Stranger_CustomOnInitialize()
+function ENT:Stranger_Init()
     self:SetBodygroup(0,math.random(0,2))
     self.SoundTbl_Breath = {
     "vj_cofr/custom/stranger/st_voiceloop.wav"

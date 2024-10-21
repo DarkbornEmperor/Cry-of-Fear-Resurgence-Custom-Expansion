@@ -6,7 +6,7 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/drowned.mdl"}
+ENT.Model = "models/vj_cofr/custom/drowned.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/custom/crazylady/knife_hitbody1.wav",
@@ -19,7 +19,7 @@ ENT.SoundTbl_Drowned_Suicide = {
 "vj_cofr/custom/crazylady/suicide_attempt.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Drowned_CustomOnInitialize()
+function ENT:Drowned_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/custom/crazylady/lady_alert10.wav",
     "vj_cofr/custom/crazylady/lady_alert20.wav",
@@ -43,7 +43,7 @@ function ENT:Drowned_CustomOnInitialize()
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAcceptInput(key,activator,caller,data)
+function ENT:OnInput(key,activator,caller,data)
     if key == "attack" then
         self:MeleeAttackCode()
     elseif key == "attack_range" then

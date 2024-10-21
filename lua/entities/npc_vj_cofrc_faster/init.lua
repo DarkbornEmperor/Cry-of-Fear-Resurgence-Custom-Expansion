@@ -6,11 +6,11 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/faster.mdl"}
+ENT.Model = "models/vj_cofr/custom/faster.mdl"
 -- Custom
 ENT.Faster_Type = 1
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Faster_CustomOnInitialize()
+function ENT:Faster_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/custom/faster/faster_alert1.wav",
     "vj_cofr/custom/faster/faster_alert2.wav"

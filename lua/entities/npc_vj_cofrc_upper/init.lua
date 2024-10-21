@@ -6,7 +6,7 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/upper.mdl"}
+ENT.Model = "models/vj_cofr/custom/upper.mdl"
 ENT.MeleeAttackDamage = 14
     -- ====== Controller Data ====== --
 ENT.VJC_Data = {
@@ -26,7 +26,7 @@ ENT.SoundTbl_MeleeAttackMiss = {
 "vj_cofr/cof/faceless/fist_miss2.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Slower_CustomOnInitialize()
+function ENT:Slower_Init()
     self.SoundTbl_Alert = {
     "vj_cofr/cof/slower/slower_alert10.wav",
     "vj_cofr/cof/slower/slower_alert20.wav",
@@ -46,9 +46,9 @@ function ENT:Slower_CustomOnInitialize()
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAlert()
+function ENT:OnAlert(ent)
     if math.random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", {"vj_cofr/cof/upper/sickscream.wav"})
+        self:PlaySoundSystem("Alert", "vj_cofr/cof/upper/sickscream.wav")
     end
 end
 /*-----------------------------------------------

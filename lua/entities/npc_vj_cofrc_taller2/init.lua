@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/taller2.mdl"}
+ENT.Model = "models/vj_cofr/custom/taller2.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Taller_CustomOnInitialize()
+function ENT:Taller_Init()
     self:SetBodygroup(0,math.random(0,1))
     self.SoundTbl_Alert = {
     "vj_cofr/custom/taller/taller_alert.wav"

@@ -6,13 +6,13 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/sawrunner.mdl"}
+ENT.Model = "models/vj_cofr/custom/sawrunner.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra = {
 "vj_cofr/cof/sawrunner/chainsaw_attack_hit.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Sawrunner_CustomOnInitialize()
+function ENT:Sawrunner_Init()
     self.SoundTbl_Breath = {
     "vj_cofr/cof/sawer/chainsaw_loop.wav"
 }
@@ -35,7 +35,7 @@ function ENT:Sawrunner_CustomOnInitialize()
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnAlert() return end
+function ENT:OnAlert(ent) return end
 /*-----------------------------------------------
     *** Copyright (c) 2012-2024 by DrVrej, All rights reserved. ***
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,

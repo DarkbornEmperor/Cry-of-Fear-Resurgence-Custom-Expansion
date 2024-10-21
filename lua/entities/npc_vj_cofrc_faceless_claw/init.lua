@@ -6,7 +6,7 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/faceless_claw.mdl"}
+ENT.Model = "models/vj_cofr/custom/faceless_claw.mdl"
 ENT.MeleeAttackDamageType = DMG_SLASH
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra = {
@@ -19,7 +19,7 @@ ENT.SoundTbl_MeleeAttackMiss = {
 "vj_cofr/cof/faceless/fist_miss2.wav"
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Faceless_CustomOnInitialize()
+function ENT:Faceless_Init()
     self:SetBodygroup(0,math.random(0,1))
     self.SoundTbl_Alert = {
     "vj_cofr/custom/faceless/faceless_alert10.wav",

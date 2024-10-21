@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/sawer.mdl"}
+ENT.Model = "models/vj_cofr/custom/sawer.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Sawer_CustomOnInitialize()
+function ENT:Sawer_Init()
     self.SoundTbl_Breath = {
     "vj_cofr/custom/sawer/chainsaw_loop.wav"
 }

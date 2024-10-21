@@ -6,9 +6,9 @@ include("shared.lua")
     No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
-ENT.Model = {"models/vj_cofr/custom/sewmo.mdl"}
+ENT.Model = "models/vj_cofr/custom/sewmo.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:Sewmo_CustomOnInitialize()
+function ENT:Sewmo_Init()
 local Sewmo_Body = math.random(1,2)
 if Sewmo_Body == 1 then
     self.Sewmo_Skin = 0
@@ -38,7 +38,7 @@ end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:MultipleMeleeAttacks()
     if self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 2 then
-        self.AnimTbl_MeleeAttack = {ACT_MELEE_ATTACK1}
+        self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK1
         self.MeleeAttackDamage = 16
         self.MeleeAttackDamageType = DMG_SLASH
         self.SoundTbl_MeleeAttackMiss = {
@@ -49,7 +49,7 @@ function ENT:MultipleMeleeAttacks()
         "vj_cofr/custom/sewmo/tunga_strike2.wav"
 }
     elseif self:GetBodygroup(0) == 1 or self:GetBodygroup(0) == 3 then
-        self.AnimTbl_MeleeAttack = {ACT_MELEE_ATTACK2}
+        self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK2
         self.MeleeAttackDamage = 20
         self.MeleeAttackDamageType = DMG_CLUB
         self.SoundTbl_MeleeAttackMiss = {
