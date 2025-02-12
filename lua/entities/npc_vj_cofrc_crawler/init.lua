@@ -65,16 +65,16 @@ function ENT:OnAlert(ent)
     end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:MultipleMeleeAttacks()
+function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
     if self:GetBodygroup(0) == 0 then
         self.MeleeAttackDamage = 34
         self.MeleeAttackDamageType = DMG_SLASH
-        self.SoundTbl_MeleeAttackExtra = {
+        self.SoundTbl_MeleeAttackExtra =
         "vj_cofr/aom/davidbad/Axe_hitbody.wav"
-}
-        self.SoundTbl_MeleeAttackMiss = {
+
+        self.SoundTbl_MeleeAttackMiss =
         "vj_cofr/aom/davidbad/Axe_swing.wav"
-}
+
     elseif self:GetBodygroup(0) == 1 or self:GetBodygroup(0) == 2 or self:GetBodygroup(0) == 3 or self:GetBodygroup(0) == 4 or self:GetBodygroup(0) == 5 then
         self.MeleeAttackDamage = 24
         self.MeleeAttackDamageType = DMG_CLUB

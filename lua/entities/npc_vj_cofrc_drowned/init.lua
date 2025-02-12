@@ -45,9 +45,9 @@ end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:OnInput(key,activator,caller,data)
     if key == "attack" then
-        self:MeleeAttackCode()
+        self:ExecuteMeleeAttack()
     elseif key == "attack_range" then
-        self:RangeAttackCode()
+        self:ExecuteRangeAttack()
     elseif key == "baby_appear" then
         VJ.EmitSound(self,"vj_cofr/custom/crazylady/baby_burst.wav", 75, 100)
         ParticleEffect("vj_cofr_blood_red_large",self:GetAttachment(self:LookupAttachment("baby")).Pos,self:GetAngles())

@@ -36,14 +36,14 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:MultipleMeleeAttacks()
+function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
     if self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 2 then
         self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK1
         self.MeleeAttackDamage = 16
         self.MeleeAttackDamageType = DMG_SLASH
-        self.SoundTbl_MeleeAttackMiss = {
+        self.SoundTbl_MeleeAttackMiss =
         "vj_cofr/custom/sewmo/tunga_miss.wav"
-}
+
         self.SoundTbl_MeleeAttackExtra = {
         "vj_cofr/custom/sewmo/tunga_strike1.wav",
         "vj_cofr/custom/sewmo/tunga_strike2.wav"
