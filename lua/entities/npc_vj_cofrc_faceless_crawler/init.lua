@@ -7,9 +7,9 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/custom/faceless2.mdl"
-ENT.CanFlinch = 0
+ENT.CanFlinch = false
     -- ====== Controller Data ====== --
-ENT.ControllerParameters = {
+ENT.ControllerParams = {
     CameraMode = 1, -- Sets the default camera mode | 1 = Third Person, 2 = First Person
     ThirdP_Offset = Vector(30, 25, 5), -- The offset for the controller when the camera is in third person
     FirstP_Bone = "Bip01 Head", -- If left empty, the base will attempt to calculate a position for first person
