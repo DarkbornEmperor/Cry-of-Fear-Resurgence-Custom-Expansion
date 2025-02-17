@@ -25,7 +25,7 @@ function ENT:Carcass_Init()
     "vj_cofr/cof/roofboss/rb_death.wav"
 }
     if GetConVar("VJ_COFR_JoeBiden"):GetInt() == 1 then
-        self.RangeAttackEntityToSpawn = "obj_vj_cofr_biden"
+        self.RangeAttackProjectiles = "obj_vj_cofr_biden"
         self:SetMaterial("hud/killicons/default")
         self:DrawShadow(false)
     end
