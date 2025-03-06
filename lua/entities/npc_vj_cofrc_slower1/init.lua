@@ -48,7 +48,8 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
+function ENT:OnMeleeAttack(status,enemy)
+    if status == "Init" then
     if self:GetBodygroup(0) == 0 then
         self.MeleeAttackDamage = 25
         self.MeleeAttackDamageType = DMG_SLASH
@@ -70,6 +71,7 @@ function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
         "vj_cofr/custom/slower/hammer_miss1.wav",
         "vj_cofr/custom/slower/hammer_miss2.wav"
 }
+        end
     end
 end
 /*-----------------------------------------------

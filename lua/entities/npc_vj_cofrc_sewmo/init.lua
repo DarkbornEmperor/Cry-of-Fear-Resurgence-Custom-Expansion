@@ -36,7 +36,8 @@ end
 }
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
+function ENT:OnMeleeAttack(status,enemy)
+    if status == "Init" then
     if self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 2 then
         self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK1
         self.MeleeAttackDamage = 16
@@ -62,6 +63,7 @@ function ENT:CustomOnMeleeAttack_BeforeStartTimer(seed)
         "vj_cofr/custom/sewmo/claw_strike2.wav",
         "vj_cofr/custom/sewmo/claw_strike3.wav"
 }
+        end
     end
 end
 /*-----------------------------------------------
