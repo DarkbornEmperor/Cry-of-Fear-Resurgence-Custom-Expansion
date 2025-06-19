@@ -9,6 +9,7 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/custom/slower102.mdl"
 ENT.MovementType = VJ_MOVETYPE_STATIONARY
 ENT.CanTurnWhileStationary = false
+ENT.FlinchHitGroupMap = false
 ENT.AnimTbl_Death = ACT_DIESIMPLE
  ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_Init()
