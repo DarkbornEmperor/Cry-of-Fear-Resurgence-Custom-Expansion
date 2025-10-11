@@ -52,10 +52,10 @@ function ENT:OnMeleeAttack(status,enemy)
         self.MeleeAttackDamage = 25
         self.MeleeAttackDamageType = DMG_SLASH
         self.SoundTbl_MeleeAttackExtra =
-        "vj_cofr/aom/davidbad/Axe_hitbody.wav"
+        "vj_cofr/aom/weapons/axe/Axe_hitbody.wav"
 
         self.SoundTbl_MeleeAttackMiss =
-        "vj_cofr/aom/davidbad/Axe_swing.wav"
+        "vj_cofr/aom/weapons/axe/Axe_swing.wav"
 
     elseif self:GetBodygroup(0) == 0 or self:GetBodygroup(0) == 1 then
         self.MeleeAttackDamage = 20
