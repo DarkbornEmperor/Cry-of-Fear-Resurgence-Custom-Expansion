@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models/vj_cofr/aomr/face/CSO_Zombie_origin"
+    "$additive" "1"
+    "$nodecal" "1"
+    "$nocull" "1"
+}

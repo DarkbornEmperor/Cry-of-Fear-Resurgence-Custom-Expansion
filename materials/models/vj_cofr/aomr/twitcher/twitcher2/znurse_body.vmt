@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models/vj_cofr/aomr/twitcher/twitcher2/znurse_body"
+    "$additive" "1"
+    "$nodecal" "1"
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models/vj_cofr/aomr/twitcher/twitcher2/LP_zomgotlol"
+    "$alphatest" "1"
+    "$nocull" "1"
+}

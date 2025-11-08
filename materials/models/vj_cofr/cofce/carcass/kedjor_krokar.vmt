@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models/vj_cofr/cofce/carcass/kedjor_krokar"
+    "$alphatest" "1"
+    "$nodecal" "1"
+}
