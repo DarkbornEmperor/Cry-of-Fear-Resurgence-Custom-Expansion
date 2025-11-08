@@ -9,11 +9,11 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/cofce/suicider.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Suicider_Init()
-local Suicider_Body = math.random(1,2)
-if Suicider_Body == 1 then
+local suiciderBody = math.random(1,2)
+if suiciderBody == 1 then
     self.Suicider_Skin = 0
     self:SetBodygroup(0,0)
-elseif Suicider_Body == 2 then
+elseif suiciderBody == 2 then
     self.Suicider_Skin = 1
     self:SetBodygroup(0,2)
 end
