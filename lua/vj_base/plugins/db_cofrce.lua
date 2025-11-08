@@ -34,7 +34,7 @@
     VJ.AddNPC("Slower 3 (Hunter Hunted)","npc_vj_cofrcehh_slower3",spawnCategory)
     VJ.AddNPC("Slower No","npc_vj_cofrce_slowerno",spawnCategory)
     VJ.AddNPC("Slower Ten","npc_vj_cofrce_slowerten",spawnCategory)
-    VJ.AddNPC("Slower Ten 2","npc_vj_cofrce_slowerten2",spawnCategory)
+    VJ.AddNPC("Slower Ten-2","npc_vj_cofrce_slowerten2",spawnCategory)
     VJ.AddNPC("Stranger","npc_vj_cofrce_stranger",spawnCategory)
     VJ.AddNPC("Suicider","npc_vj_cofrce_suicider",spawnCategory)
     VJ.AddNPC("Suicider 2","npc_vj_cofrce_suicider2",spawnCategory)
