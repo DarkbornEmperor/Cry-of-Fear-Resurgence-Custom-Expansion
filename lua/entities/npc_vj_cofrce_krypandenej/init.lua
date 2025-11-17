@@ -28,9 +28,11 @@ ENT.SoundTbl_MeleeAttackMiss = {
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_Init()
-    self.SoundTbl_Alert =
-        "vj_cofr/cof/krypandenej/scream.wav",
-
+    self.SoundTbl_Alert = {
+        "vj_cofr/cofce/slower/slower_alert10.wav",
+        "vj_cofr/cofce/slower/slower_alert20.wav",
+        "vj_cofr/cofce/slower/slower_alert30.wav"
+    }
     self.SoundTbl_BeforeMeleeAttack = {
         "vj_cofr/cofce/slower/slower_attack1.wav",
         "vj_cofr/cofce/slower/slower_attack2.wav"
