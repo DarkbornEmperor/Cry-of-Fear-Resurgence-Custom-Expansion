@@ -9,30 +9,30 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/cofce/children.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra =
-"vj_cofr/cofce/children/child_slice.wav"
+    "vj_cofr/cofce/children/child_slice.wav"
 
 ENT.SoundTbl_MeleeAttackMiss =
-"vj_cofr/cofce/children/child_slash.wav"
+    "vj_cofr/cofce/children/child_slash.wav"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Children_Init()
-    self:SetBodygroup(0,math.random(0,1))
+    self:SetBodygroup(0, math.random(0,1))
     self.SoundTbl_Alert = {
-    "vj_cofr/cofce/children/child_alert10.wav",
-    "vj_cofr/cofce/children/child_alert20.wav",
-    "vj_cofr/cofce/children/child_alert30.wav"
-}
+        "vj_cofr/cofce/children/child_alert10.wav",
+        "vj_cofr/cofce/children/child_alert20.wav",
+        "vj_cofr/cofce/children/child_alert30.wav"
+    }
     self.SoundTbl_BeforeMeleeAttack = {
-    "vj_cofr/cofce/children/child_attack1.wav",
-    "vj_cofr/cofce/children/child_attack2.wav"
-}
+        "vj_cofr/cofce/children/child_attack1.wav",
+        "vj_cofr/cofce/children/child_attack2.wav"
+    }
     self.SoundTbl_Pain = {
-    "vj_cofr/cofce/children/child_pain1.wav",
-    "vj_cofr/cofce/children/child_pain2.wav"
-}
+        "vj_cofr/cofce/children/child_pain1.wav",
+        "vj_cofr/cofce/children/child_pain2.wav"
+    }
     self.SoundTbl_Death = {
-    "vj_cofr/cofce/children/child_pain1.wav",
-    "vj_cofr/cofce/children/child_pain2.wav"
-}
+        "vj_cofr/cofce/children/child_pain1.wav",
+        "vj_cofr/cofce/children/child_pain2.wav"
+    }
 end
 /*-----------------------------------------------
     *** Copyright (c) 2012-2025 by DrVrej, All rights reserved. ***

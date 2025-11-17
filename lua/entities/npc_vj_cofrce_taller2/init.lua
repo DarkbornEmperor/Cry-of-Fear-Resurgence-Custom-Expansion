@@ -9,16 +9,15 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/cofce/taller2.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Taller_Init()
-    self:SetBodygroup(0,math.random(0,1))
-    self.SoundTbl_Alert = {
-    "vj_cofr/cofce/taller/taller_alert.wav"
-}
-    self.SoundTbl_Pain = {
-    "vj_cofr/cofce/taller/taller_pain.wav"
-}
-    self.SoundTbl_Death = {
-    "vj_cofr/cofce/taller/taller_die.wav"
-}
+    self:SetBodygroup(0, math.random(0,1))
+    self.SoundTbl_Alert =
+        "vj_cofr/cofce/taller/taller_alert.wav"
+
+    self.SoundTbl_Pain =
+        "vj_cofr/cofce/taller/taller_pain.wav"
+
+    self.SoundTbl_Death =
+        "vj_cofr/cofce/taller/taller_die.wav"
 end
 /*-----------------------------------------------
     *** Copyright (c) 2012-2025 by DrVrej, All rights reserved. ***

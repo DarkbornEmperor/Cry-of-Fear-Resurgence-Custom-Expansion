@@ -8,18 +8,17 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/stranger.mdl"
     -- ====== Sound File Paths ====== --
-ENT.SoundTbl_Stranger_HeartBeat = {
-"vj_cofr/cofce/stranger/st_hearbeat.wav"
-}
+ENT.SoundTbl_Stranger_HeartBeat =
+    "vj_cofr/cofce/stranger/st_hearbeat.wav"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Stranger_Init()
-    self:SetBodygroup(0,math.random(0,2))
-    self.SoundTbl_Breath = {
-    "vj_cofr/cofce/stranger/st_voiceloop.wav"
-}
-    self.SoundTbl_Death = {
-    "vj_cofr/cofce/stranger/st_death.wav"
-}
+    self:SetBodygroup(0, math.random(0,2))
+    self.SoundTbl_Breath =
+        "vj_cofr/cofce/stranger/st_voiceloop.wav"
+
+    self.SoundTbl_Death =
+        "vj_cofr/cofce/stranger/st_death.wav"
+
 end
 /*-----------------------------------------------
     *** Copyright (c) 2012-2025 by DrVrej, All rights reserved. ***

@@ -9,27 +9,27 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/cofce/suicider3.mdl"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Suicider_Init()
-local suiciderBody = math.random(1,2)
-if suiciderBody == 1 then
-    self.Suicider_Skin = 3
-    self:SetBodygroup(0,0)
-elseif suiciderBody == 2 then
-    self.Suicider_Skin = 4
-    self:SetBodygroup(0,1)
-end
+    local suiciderBody = math.random(1,2)
+    if suiciderBody == 1 then
+        self.Suicider_Skin = 3
+        self:SetBodygroup(0,0)
+    elseif suiciderBody == 2 then
+        self.Suicider_Skin = 4
+        self:SetBodygroup(0,1)
+    end
     self.SoundTbl_Alert = {
-    "vj_cofr/cofce/slower/slower_alert10.wav",
-    "vj_cofr/cofce/slower/slower_alert20.wav",
-    "vj_cofr/cofce/slower/slower_alert30.wav"
-}
+        "vj_cofr/cofce/slower/slower_alert10.wav",
+        "vj_cofr/cofce/slower/slower_alert20.wav",
+        "vj_cofr/cofce/slower/slower_alert30.wav"
+    }
     self.SoundTbl_Pain = {
-    "vj_cofr/cofce/slower/slower_pain1.wav",
-    "vj_cofr/cofce/slower/slower_pain2.wav"
-}
+        "vj_cofr/cofce/slower/slower_pain1.wav",
+        "vj_cofr/cofce/slower/slower_pain2.wav"
+    }
     self.SoundTbl_Death = {
-    "vj_cofr/cofce/slower/slower_pain1.wav",
-    "vj_cofr/cofce/slower/slower_pain2.wav"
-}
+        "vj_cofr/cofce/slower/slower_pain1.wav",
+        "vj_cofr/cofce/slower/slower_pain2.wav"
+    }
 end
 /*-----------------------------------------------
     *** Copyright (c) 2012-2025 by DrVrej, All rights reserved. ***
