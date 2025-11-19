@@ -72,5 +72,8 @@
     VJ.AddNPC("David Leatherhoff (Remod)","npc_vj_cofraomr_david", spawnCategory)
     VJ.AddNPC("David Leatherhoff (Dead) (Remod)","npc_vj_cofraomr_david_dead", spawnCategory)
 
+    -- Misc/Hazards --
+    VJ.AddNPC("Devourer (Remod)","npc_vj_cofraomr_devourer", spawnCategory, false, function(x) x.OnCeiling = true x.Offset = 0 end)
+
     -- Apparitions --
     VJ.AddNPC("David (Hanging) (Remod)","sent_vj_cofraomr_david_hanging", spawnCategory)
