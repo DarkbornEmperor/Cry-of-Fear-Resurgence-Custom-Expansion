@@ -1,4 +1,5 @@
 "VertexLitGeneric"
 {
     "$basetexture" "models/vj_cofr/aomr/twitcher/LP_zomgotlol"
+    "$nocull" "1"
 }
