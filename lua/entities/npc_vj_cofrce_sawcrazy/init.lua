@@ -13,9 +13,11 @@ ENT.SoundTbl_MeleeAttackExtra =
 
 ENT.SoundTbl_MeleeAttackMiss =
     "vj_cofr/cofce/sawrunner/chainsaw_attack_miss.wav"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Sawcrazy_Init()
-    self:SetBodygroup(0, math.random(0,1))
+    self:SetBodygroup(0, math_random(0,1))
     self.SoundTbl_Breath =
         "vj_cofr/cofce/sawcrazy/dblsawloop.wav"
 

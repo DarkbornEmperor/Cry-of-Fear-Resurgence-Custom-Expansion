@@ -26,8 +26,7 @@ function ENT:Carcass_Init()
 
     if GetConVar("VJ_COFR_JoeBiden"):GetInt() == 1 then
         self.RangeAttackProjectiles = "obj_vj_cofr_biden"
-        self:SetMaterial("hud/killicons/default")
-        self:DrawShadow(false)
+        self:SetNoDraw(true)
     end
 end
 /*-----------------------------------------------

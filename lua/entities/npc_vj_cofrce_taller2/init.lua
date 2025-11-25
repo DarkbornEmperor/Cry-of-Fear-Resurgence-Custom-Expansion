@@ -7,9 +7,11 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/taller2.mdl"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Taller_Init()
-    self:SetBodygroup(0, math.random(0,1))
+    self:SetBodygroup(0, math_random(0,1))
     self.SoundTbl_Alert =
         "vj_cofr/cofce/taller/taller_alert.wav"
 

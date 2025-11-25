@@ -7,9 +7,11 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/suicider2.mdl"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Suicider_Init()
-    local suiciderBody = math.random(1,3)
+    local suiciderBody = math_random(1,3)
     if suiciderBody == 1 then
         self.Suicider_Skin = 0
         self:SetBodygroup(0,0)

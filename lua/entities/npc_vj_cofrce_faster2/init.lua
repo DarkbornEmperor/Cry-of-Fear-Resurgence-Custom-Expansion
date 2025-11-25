@@ -26,7 +26,7 @@ function ENT:Faster_Init()
         "vj_cofr/cofce/faster/faster_alert2.wav"
     }
     self.SoundTbl_BeforeMeleeAttack =
-        "vj_cofr/cofce/faster/faster_pain.wav"
+        "vj_cofr/cofce/faster/faster_attack.wav"
 
     self.SoundTbl_Pain =
         "vj_cofr/cofce/faster/faster_pain.wav"

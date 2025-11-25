@@ -18,9 +18,11 @@ ENT.SoundTbl_MeleeAttackMiss = {
     "vj_cofr/cofce/faceless/fist_miss1.wav",
     "vj_cofr/cofce/faceless/fist_miss2.wav"
 }
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Faceless_Init()
-    self:SetBodygroup(0, math.random(0,1))
+    self:SetBodygroup(0, math_random(0,1))
     self.SoundTbl_Alert = {
         "vj_cofr/cofce/faceless/faceless_alert10.wav",
         "vj_cofr/cofce/faceless/faceless_alert20.wav",

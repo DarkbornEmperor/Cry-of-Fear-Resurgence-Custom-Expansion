@@ -13,9 +13,11 @@ ENT.SoundTbl_MeleeAttackExtra =
 
 ENT.SoundTbl_MeleeAttackMiss =
     "vj_cofr/cofce/children/child_slash.wav"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Children_Init()
-    self:SetBodygroup(0, math.random(0,1))
+    self:SetBodygroup(0, math_random(0,1))
     self.SoundTbl_Alert = {
         "vj_cofr/cofce/children/child_alert10.wav",
         "vj_cofr/cofce/children/child_alert20.wav",

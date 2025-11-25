@@ -17,9 +17,11 @@ ENT.SoundTbl_FootStep = {
     "vj_cofr/cofce/slower/k_crawl6.wav",
     "vj_cofr/cofce/slower/k_crawl7.wav"
 }
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_Init()
-    local slowerBody = math.random(1,6)
+    local slowerBody = math_random(1,6)
     if slowerBody == 1 then
         self.Slower_Skin = 0
         self:SetBodygroup(0,0)
@@ -60,7 +62,7 @@ function ENT:Slower_Init()
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:OnAlert(ent)
-    if math.random(1,3) == 1 then
+    if math_random(1,3) == 1 then
         self:PlaySoundSystem("Alert", "vj_cofr/cofce/slower/scream1.wav")
     end
 end

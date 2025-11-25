@@ -10,9 +10,11 @@ ENT.Model = "models/vj_cofr/cofce/stranger.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_Stranger_HeartBeat =
     "vj_cofr/cofce/stranger/st_hearbeat.wav"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Stranger_Init()
-    self:SetBodygroup(0, math.random(0,2))
+    self:SetBodygroup(0, math_random(0,2))
     self.SoundTbl_Breath =
         "vj_cofr/cofce/stranger/st_voiceloop.wav"
 

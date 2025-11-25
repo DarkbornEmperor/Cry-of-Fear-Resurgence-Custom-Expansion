@@ -7,9 +7,11 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/sewmo.mdl"
+
+local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Sewmo_Init()
-    local sewmoBody = math.random(1,2)
+    local sewmoBody = math_random(1,2)
     if sewmoBody == 1 then
         self.Sewmo_Skin = 0
         self:SetBodygroup(0,0)
