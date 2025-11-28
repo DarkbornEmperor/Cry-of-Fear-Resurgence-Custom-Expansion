@@ -5,6 +5,10 @@
 --------------------------------------------------*/
     VJ.AddPlugin("Cry of Fear Resurgence - Custom Expansion", "NPC")
 
+if SERVER then
+    resource.AddWorkshop("2573915612") -- Base CoFR Addon
+end
+
     -- Cry of Fear: Custom Expansion --
     local spawnCategory = "CoF Resurgence: Custom Expansion"
     VJ.AddCategoryInfo(spawnCategory, {Icon = "vj_cofr/icons/cofrce.png"})
