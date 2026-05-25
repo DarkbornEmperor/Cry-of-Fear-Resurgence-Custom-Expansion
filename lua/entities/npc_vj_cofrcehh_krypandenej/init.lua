@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofr_crawler/init.lua")
+include("entities/npc_vj_cofr_krypandenej/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------
@@ -30,14 +30,3 @@ function ENT:Slower_Init()
     }
     self:SetCollisionBounds(Vector(13, 13, 35), Vector(-13, -13, 0))
 end
----------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:OnAlert(ent)
-    if math_random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", "vj_cofr/cof/krypandenej/scream.wav")
-    end
-end
-/*-----------------------------------------------
-    *** Copyright (c) 2012-2026 by DrVrej, All rights reserved. ***
-    No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
-    without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
------------------------------------------------*/

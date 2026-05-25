@@ -8,6 +8,15 @@ include("shared.lua")
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/slowerno.mdl"
 
+local attHammerHit = {
+    "vj_cofr/cofce/slower/hammer_miss1.wav",
+    "vj_cofr/cofce/slower/hammer_miss2.wav"
+}
+local attHammerMiss = {
+    "vj_cofr/cofce/slower/hammer_strike1.wav",
+    "vj_cofr/cofce/slower/hammer_strike2.wav",
+    "vj_cofr/cofce/slower/hammer_strike3.wav"
+}
 local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_Init()
@@ -46,8 +55,8 @@ end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:OnMeleeAttack(status, enemy)
     if status == "Init" then
-        if self:GetBodygroup(0) == 1 then
-            self.MeleeAttackDamage = 25
+        local myBG = self:GetBodygroup(0)
+        if myBG == 1 then
             self.MeleeAttackDamageType = DMG_SLASH
             self.SoundTbl_MeleeAttackExtra =
                 "vj_cofr/aom/weapons/axe/Axe_hitbody.wav"
@@ -55,23 +64,10 @@ function ENT:OnMeleeAttack(status, enemy)
             self.SoundTbl_MeleeAttackMiss =
                 "vj_cofr/aom/weapons/axe/Axe_swing.wav"
 
-        elseif self:GetBodygroup(0) == 0 then
-            self.MeleeAttackDamage = 20
+        elseif myBG == 0 then
             self.MeleeAttackDamageType = DMG_CLUB
-            self.SoundTbl_MeleeAttackExtra = {
-                "vj_cofr/cofce/slower/hammer_strike1.wav",
-                "vj_cofr/cofce/slower/hammer_strike2.wav",
-                "vj_cofr/cofce/slower/hammer_strike3.wav"
-            }
-            self.SoundTbl_MeleeAttackMiss = {
-                "vj_cofr/cofce/slower/hammer_miss1.wav",
-                "vj_cofr/cofce/slower/hammer_miss2.wav"
-            }
+            self.SoundTbl_MeleeAttackExtra = attHammerHit
+            self.SoundTbl_MeleeAttackMiss = attHammerMiss
         end
     end
 end
-/*-----------------------------------------------
-    *** Copyright (c) 2012-2026 by DrVrej, All rights reserved. ***
-    No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
-    without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
------------------------------------------------*/

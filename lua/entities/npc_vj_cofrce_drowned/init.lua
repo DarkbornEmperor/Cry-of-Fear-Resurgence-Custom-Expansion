@@ -12,12 +12,11 @@ ENT.SoundTbl_MeleeAttackExtra = {
     "vj_cofr/cofce/drowned/knife_hitbody1.wav",
     "vj_cofr/cofce/drowned/knife_hitbody2.wav"
 }
-ENT.SoundTbl_MeleeAttackMiss = {
+ENT.SoundTbl_MeleeAttackMiss =
     "vj_cofr/cofce/drowned/knife_swing.wav"
-}
-ENT.SoundTbl_Drowned_Suicide = {
+
+ENT.SoundTbl_Drowned_Suicide =
     "vj_cofr/cofce/drowned/suicide_attempt.wav"
-}
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Drowned_Init()
     self.SoundTbl_Alert = {
@@ -42,8 +41,3 @@ function ENT:Drowned_Init()
         "vj_cofr/cofce/drowned/lady_pain2.wav"
     }
 end
-/*-----------------------------------------------
-    *** Copyright (c) 2012-2026 by DrVrej, All rights reserved. ***
-    No parts of this code or any of its contents may be reproduced, copied, modified or adapted,
-    without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
------------------------------------------------*/
