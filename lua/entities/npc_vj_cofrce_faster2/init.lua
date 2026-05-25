@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofr_faster/init.lua")
+include("entities/npc_vj_cofr_faster_male/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------

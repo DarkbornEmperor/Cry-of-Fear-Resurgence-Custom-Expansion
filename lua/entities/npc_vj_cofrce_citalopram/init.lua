@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofr_crazyrunner/init.lua")
+include("entities/npc_vj_cofr_citalopram/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------
@@ -23,10 +23,4 @@ function ENT:CrazyRunner_Init()
         "vj_cofr/cofce/crazyrunner/rc_alert2.wav",
         "vj_cofr/cofce/crazyrunner/rc_alert3.wav"
     }
-end
------------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:OnAlert(ent)
-    if math_random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", "vj_cofr/cof/citalopram/citalopramscream.wav")
-    end
 end

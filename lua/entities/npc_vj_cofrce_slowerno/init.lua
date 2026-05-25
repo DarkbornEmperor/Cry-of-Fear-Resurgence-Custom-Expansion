@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofr_slower1/init.lua")
+include("entities/npc_vj_cofr_slowerno/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------
@@ -45,12 +45,6 @@ function ENT:Slower_Init()
         "vj_cofr/cofce/slower3/slower_pain1.wav",
         "vj_cofr/cofce/slower3/slower_pain2.wav"
     }
-end
------------------------------------------------------------------------------------------------------------------------------------------------
-function ENT:OnAlert(ent)
-    if math_random(1,3) == 1 then
-        self:PlaySoundSystem("Alert", "vj_cofr/cof/slowerno/headdy.wav")
-    end
 end
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:OnMeleeAttack(status, enemy)

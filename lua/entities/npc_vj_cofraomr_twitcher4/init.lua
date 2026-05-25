@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofraom_twitcher1/init.lua")
+include("entities/npc_vj_cofraom_twitcher4/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------

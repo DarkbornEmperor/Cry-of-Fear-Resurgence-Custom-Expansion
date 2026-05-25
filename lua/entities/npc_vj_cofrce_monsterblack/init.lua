@@ -1,4 +1,4 @@
-include("entities/npc_vj_cofr_slower1/init.lua")
+include("entities/npc_vj_cofr_slower3/init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 /*-----------------------------------------------
@@ -9,13 +9,13 @@ include("shared.lua")
 ENT.Model = "models/vj_cofr/cofce/blacker.mdl"
     -- ====== Sound File Paths ====== --
 ENT.SoundTbl_MeleeAttackExtra = {
-    "vj_cofr/cofce/faceless/fist_strike1.wav",
-    "vj_cofr/cofce/faceless/fist_strike2.wav",
-    "vj_cofr/cofce/faceless/fist_strike3.wav"
+    "vj_cofr/cof/faceless/fist_strike1.wav",
+    "vj_cofr/cof/faceless/fist_strike2.wav",
+    "vj_cofr/cof/faceless/fist_strike3.wav"
 }
 ENT.SoundTbl_MeleeAttackMiss = {
-    "vj_cofr/cofce/faceless/fist_miss1.wav",
-    "vj_cofr/cofce/faceless/fist_miss2.wav"
+    "vj_cofr/cof/faceless/fist_miss1.wav",
+    "vj_cofr/cof/faceless/fist_miss2.wav"
 }
 local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------

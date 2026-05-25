@@ -7,16 +7,6 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/faceless_crawler.mdl"
-    -- ====== Sound File Paths ====== --
-ENT.SoundTbl_MeleeAttackExtra = {
-    "vj_cofr/cofce/faceless/fist_strike1.wav",
-    "vj_cofr/cofce/faceless/fist_strike2.wav",
-    "vj_cofr/cofce/faceless/fist_strike3.wav"
-}
-ENT.SoundTbl_MeleeAttackMiss = {
-    "vj_cofr/cofce/faceless/fist_miss1.wav",
-    "vj_cofr/cofce/faceless/fist_miss2.wav"
-}
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Faceless_Init()
     self.SoundTbl_Alert = {
