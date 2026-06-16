@@ -17,15 +17,14 @@ ENT.SoundTbl_FootStep = {
     "vj_cofr/cofce/slower/k_crawl6.wav",
     "vj_cofr/cofce/slower/k_crawl7.wav"
 }
-
 local attHammerHit = {
-    "vj_cofr/cofce/slower/hammer_miss1.wav",
-    "vj_cofr/cofce/slower/hammer_miss2.wav"
-}
-local attHammerMiss = {
     "vj_cofr/cofce/slower/hammer_strike1.wav",
     "vj_cofr/cofce/slower/hammer_strike2.wav",
     "vj_cofr/cofce/slower/hammer_strike3.wav"
+}
+local attHammerMiss = {
+    "vj_cofr/cofce/slower/hammer_miss1.wav",
+    "vj_cofr/cofce/slower/hammer_miss2.wav"
 }
 local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------

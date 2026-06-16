@@ -7,8 +7,6 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/cofce/upper.mdl"
-
-local math_random = math.random
 ---------------------------------------------------------------------------------------------------------------------------------------------
 function ENT:Slower_Init()
     self.SoundTbl_Alert = {
