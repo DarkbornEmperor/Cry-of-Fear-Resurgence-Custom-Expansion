@@ -56,19 +56,14 @@ function ENT:OnMeleeAttack(status, enemy)
     if status == "Init" then
         local myBg = self:GetBodygroup(0)
         if myBg == 0 or myBg == 2 then
-            self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK1
-            self.MeleeAttackDamage = self.MeleeAttackDamage_Tongue
-            self.MeleeAttackDamageType = DMG_SLASH
             self.SoundTbl_MeleeAttackExtra = sdAttTongue
             self.SoundTbl_MeleeAttackMiss =
                 "vj_cofr/cofce/sewmo/tunga_miss.wav"
 
         elseif myBg == 1 or myBg == 3 then
-            self.AnimTbl_MeleeAttack = ACT_MELEE_ATTACK2
-            self.MeleeAttackDamage = self.MeleeAttackDamage_Fists
-            self.MeleeAttackDamageType = DMG_CLUB
             self.SoundTbl_MeleeAttackExtra = sdAttFist
             self.SoundTbl_MeleeAttackMiss = sdAttFistMiss
         end
     end
+    baseclass.Get("npc_vj_cofr_sewmo").OnMeleeAttack(self, status, enemy)
 end
