@@ -1,4 +1,5 @@
 "VertexLitGeneric"
 {
     "$basetexture" "models/vj_cofr/cofce/sewmo/byxor_4"
+    "$alphatest" "1"
 }
