@@ -11,7 +11,7 @@ end
 
 -- Cry of Fear: Custom Expansion --
 local spawnCategory = "CoF Resurgence"
-VJ.AddCategoryInfo(spawnCategory, {Icon = "vj_cofr/icons/cofrce.png"})
+//VJ.AddCategoryInfo(spawnCategory, {Icon = "vj_cofr/icons/cofrce.png"})
 
 -- Enemies --
 local subCategory = "Cry of Fear: Custom Expansion"
