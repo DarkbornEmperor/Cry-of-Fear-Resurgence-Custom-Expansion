@@ -7,4 +7,4 @@ include("shared.lua")
     without the prior written consent of the author, unless otherwise indicated for stand-alone materials.
 -----------------------------------------------*/
 ENT.Model = "models/vj_cofr/aomr/david.mdl"
-ENT.Medic_SpawnPropOnHealModel = "models/vj_cofr/aom/weapons/w_pills.mdl"
+ENT.Medic_SpawnPropOnHeal = "models/vj_cofr/aom/weapons/w_pills.mdl"
